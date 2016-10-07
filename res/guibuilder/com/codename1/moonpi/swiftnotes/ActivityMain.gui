@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component type="Form" layout="BoxLayout" boxLayoutAxis="Y"  name="ActivityMain">
+  <component type="Label" text="no_notes_text" uiid="AndroidLabel12" name="noNotes">
+  </component>
+</component>
