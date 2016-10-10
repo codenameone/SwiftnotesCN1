@@ -4,6 +4,7 @@ import com.codename1.components.FloatingActionButton;
 import com.codename1.io.Log;
 import com.codename1.ui.Button;
 import com.codename1.ui.CheckBox;
+import com.codename1.ui.Command;
 import com.codename1.ui.Component;
 import com.codename1.ui.Container;
 import com.codename1.ui.Form;
@@ -12,6 +13,7 @@ import com.codename1.ui.Font;
 import com.codename1.ui.FontImage;
 import com.codename1.ui.SwipeableContainer;
 import com.codename1.ui.TextArea;
+import com.codename1.ui.events.ActionEvent;
 import com.codename1.ui.layouts.BorderLayout;
 import com.codename1.ui.layouts.BoxLayout;
 import java.util.ArrayList;
@@ -21,6 +23,12 @@ public class ActivityMain extends Form  {
     public ActivityMain(com.codename1.ui.util.Resources resourceObjectInstance) {
         super("app_name");
         initGuiBuilderComponents(resourceObjectInstance);
+        setBackCommand(new Command("") {
+            @Override
+            public void actionPerformed(ActionEvent evt) {
+                Display.getInstance().minimizeApplication();
+            }
+        });
         FloatingActionButton fab = FloatingActionButton.createFAB(FontImage.MATERIAL_ADD);
         fab.bindFabToContainer(getContentPane());
         fab.addActionListener(e -> {
