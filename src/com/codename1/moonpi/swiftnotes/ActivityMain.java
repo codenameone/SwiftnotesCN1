@@ -140,10 +140,13 @@ public class ActivityMain extends Form  {
 // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
     private void initGuiBuilderComponents(com.codename1.ui.util.Resources resourceObjectInstance) {
         setLayout(new com.codename1.ui.layouts.BoxLayout(com.codename1.ui.layouts.BoxLayout.Y_AXIS));
+        setInlineStylesTheme(resourceObjectInstance);
+                setInlineStylesTheme(resourceObjectInstance);
         setName("ActivityMain");
         addComponent(gui_noNotes);
         gui_noNotes.setText("no_notes_text");
         gui_noNotes.setUIID("AndroidLabel12");
+                gui_noNotes.setInlineStylesTheme(resourceObjectInstance);
         gui_noNotes.setName("noNotes");
     }// </editor-fold>
 
